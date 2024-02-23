@@ -13,10 +13,10 @@ const formSchema = yup.object().shape({
   .required("You've gotta gave an email!") ,
   role: yup
     .string()
-    .onOf(["instructor", "student", "alumni"], "Role is required!"),
+    .oneOf(["instructor", "student", "alumni"], "Role is required!"),
   civil: yup
     .string()
-    .onOf(["married", "single"], "Civil status is required!"),
+    .oneOf(["married", "single"], "Civil status is required!"),
   coding: yup.boolean(),
   reading: yup.boolean(),
   hiking: yup.boolean() 

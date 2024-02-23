@@ -135,6 +135,8 @@ export default function FriendForm(props) {
           />
         </label>
       </div>
+      <input type="color"/>
+      <input type="date"/>
     </form>
   )
 }

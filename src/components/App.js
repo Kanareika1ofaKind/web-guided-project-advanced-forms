@@ -86,6 +86,7 @@ export default function App() {
       ...formValues,
       [name]: value // NOT AN ARRAY
     })
+    validate(name, value)
   }
 
   const formSubmit = () => {
